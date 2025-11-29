@@ -45,6 +45,9 @@
     .cont {
         @apply ml-[0.3rem] p-4;
     }
+    .footer-div {
+        @apply m-3 font-bold text-gray-500;
+    }
 }
 
 p {
