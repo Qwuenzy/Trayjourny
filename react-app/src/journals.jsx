@@ -10,6 +10,7 @@ function Journal() {
             <div className="flex">
                 <img src="/public/images/loc-icon.png" alt="loc-icon" className="loc-icon" />
                 <h2 className="loc">{Location}</h2>
+                <a href="#">view on google maps</a>
             </div>
           <h3 className="loc-name">{LocName}</h3>
           <p>{Date}</p>

@@ -5,7 +5,7 @@ import Footer from "./footer";
 function App() {
   return (
     <>
-      <div className="main flex-col">
+      <div className="main flex-colm">
         <Header />
         <Journal />
         <Footer />

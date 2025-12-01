@@ -5,52 +5,63 @@
 @tailwind utilities;
 
 
-@layer utilities {
-    .flex-center {
-        @apply flex justify-center items-center;
-    }
-    .flex-col {
-        @apply flex flex-col items-center
-    }
-}
-
 @layer components {
     .header-div {
-        @apply bg-[#d62710] w-full rounded-[1.3rem_1.3rem_0rem_0rem];
+        @apply bg-[#d62710] w-full rounded-[1.3rem_1.3rem_0rem_0rem] flex justify-center items-center;
     }
     .logo {
         @apply h-[2.5rem] w-[2.5rem];
     }
     .header-text {
-        @apply text-black text-[1.3rem] m-5 font-bold;
+        @apply text-black text-[1.3rem] m-2 font-bold capitalize pt-5;
     }
     .main {
-        @apply mx-[15rem] rounded-[3rem] border-solid mt-[1rem] border-[0.5rem] border-[#d62710];
+        @apply rounded-[3rem] mx-auto border-solid mt-[1rem] border-[0.5rem] border-[#d62710];
     }
     .loc-icon {
         @apply h-[1.5rem] w-[1.5rem];
     }
     .loc-cont {
-        @apply text-[#333] flex my-[1rem] mx-[2rem];
+        @apply text-[#333] mx-5 my-3;
     } 
     .loc {
         @apply text-[1.1rem] font-bold text-gray-500 capitalize;
     }
     .loc-name {
-        @apply text-[2rem] font-bold text-black;
+        @apply text-[1.5rem] md:text-[2rem] font-bold text-black;
     }
     .loc-pic {
-    @apply w-[15rem] h-[18rem] rounded-[1rem];
+        @apply min-w-fit max-h-fit rounded-[1rem];
     }
     .cont {
         @apply ml-[0.3rem] p-4;
     }
     .footer-div {
-        @apply m-3 font-bold text-gray-500;
+        @apply m-3 font-bold text-gray-500 flex justify-center items-center;
     }
 }
 
 p {
     @apply text-[1rem];
 }
+a {
+    @apply text-gray-400 ml-2 underline capitalize;
+}
+
+.loc-cont {
+  color: #333;
+  margin: 0.75rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .loc-cont {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 
