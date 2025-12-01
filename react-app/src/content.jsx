@@ -1,4 +1,4 @@
-export const Bodycontent = [
+ const Bodycontent = [
     {
         Location: "japan",
         LocName: "Mount Fuji",
@@ -28,3 +28,5 @@ export const Bodycontent = [
         Image: "/public/images/ukimg.jpeg"
     }
 ]
+
+export default Bodycontent;

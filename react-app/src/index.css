@@ -49,9 +49,12 @@ a {
 }
 
 .loc-cont {
-  color: #333;
-  margin: 0.75rem 1.25rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cont {
+    display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -62,6 +65,10 @@ a {
     justify-content: center;
     align-items: center;
   }
+  .cont {
+  flex-direction: column;
+  align-items: start;
+}
 }
 
 
