@@ -1,4 +1,4 @@
-function Journal({ Location, LocName, Date, Content, Image }) {
+function Journal({Location,Image,Loclink,LocName,Date,Content}) {
   return (
     <section className="loc-cont">
       <img src={Image} alt="location-pc" className="loc-pic" />
@@ -10,7 +10,7 @@ function Journal({ Location, LocName, Date, Content, Image }) {
             className="loc-icon"
           />
           <h2 className="loc">{Location}</h2>
-          <a href="#">view on google maps</a>
+          <a href={Loclink}>view on google maps</a>
         </div>
         <h3 className="loc-name">{LocName}</h3>
         <p>{Date}</p>

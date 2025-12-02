@@ -8,15 +8,11 @@ function App() {
     <>
       <div className="main">
         <Header />
-        {BodyContent.map((content) => {
-          const { Location, LocName, Date, Content, Image } = content;
+        {BodyContent.map((content, id) => {
           return (
             <Journal
-              Location={Location}
-              LocName={LocName}
-              Date={Date}
-              Content={Content}
-              Image={Image}
+              key={id}
+              {...content}
             />
           );
         })}
