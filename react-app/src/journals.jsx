@@ -1,3 +1,5 @@
+import locicon from "../public/images/loc-icon.png"
+
 function Journal({Location,Image,Loclink,LocName,Date,Content}) {
   return (
     <section className="loc-cont">
@@ -5,7 +7,7 @@ function Journal({Location,Image,Loclink,LocName,Date,Content}) {
       <div className="cont">
         <div className="flex">
           <img
-            src="/public/images/loc-icon.png"
+            src={locicon}
             alt="loc-icon"
             className="loc-icon"
           />
